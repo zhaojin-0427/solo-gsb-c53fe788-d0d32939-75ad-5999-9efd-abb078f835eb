@@ -1,0 +1,90 @@
+{
+  "plan": [
+    {
+      "part_id": "P1",
+      "option_id": "A1",
+      "cost": 10
+    },
+    {
+      "part_id": "P2",
+      "option_id": "B2",
+      "cost": 8
+    },
+    {
+      "part_id": "P3",
+      "option_id": "C2",
+      "cost": 3
+    }
+  ],
+  "total_cost": 21,
+  "gap_extremes": [
+    {
+      "gap_id": "G1",
+      "minimum": -57,
+      "maximum": 137
+    },
+    {
+      "gap_id": "G2",
+      "minimum": -87,
+      "maximum": 167
+    }
+  ],
+  "witnesses": [
+    {
+      "gap_id": "G1",
+      "extreme": "minimum",
+      "group_offsets": {
+        "g1": -4,
+        "g2": 3
+      },
+      "part_residuals": {
+        "P1": -5,
+        "P2": 20,
+        "P3": 25
+      },
+      "value": -57
+    },
+    {
+      "gap_id": "G1",
+      "extreme": "maximum",
+      "group_offsets": {
+        "g1": 4,
+        "g2": -3
+      },
+      "part_residuals": {
+        "P1": 5,
+        "P2": -20,
+        "P3": -25
+      },
+      "value": 137
+    },
+    {
+      "gap_id": "G2",
+      "extreme": "minimum",
+      "group_offsets": {
+        "g1": -4,
+        "g2": 3
+      },
+      "part_residuals": {
+        "P1": -5,
+        "P2": -20,
+        "P3": 25
+      },
+      "value": -87
+    },
+    {
+      "gap_id": "G2",
+      "extreme": "maximum",
+      "group_offsets": {
+        "g1": 4,
+        "g2": -3
+      },
+      "part_residuals": {
+        "P1": 5,
+        "P2": 20,
+        "P3": -25
+      },
+      "value": 167
+    }
+  ]
+}
