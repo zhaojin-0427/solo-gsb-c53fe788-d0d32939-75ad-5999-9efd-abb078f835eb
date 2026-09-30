@@ -1,0 +1,71 @@
+{
+    "selections": [
+        {
+            "part_id": "P1",
+            "option_id": "cheap"
+        },
+        {
+            "part_id": "P2",
+            "option_id": "std"
+        }
+    ],
+    "total_cost": 80,
+    "gaps": [
+        {
+            "gap_id": "GAP1",
+            "allowed_low": 2850,
+            "allowed_high": 3150,
+            "nominal_center": 3000,
+            "min_value": 2865,
+            "max_value": 3135,
+            "min_witness": {
+                "batch_group_shifts": {
+                    "GA": -20,
+                    "GB": -15
+                },
+                "part_residuals": {
+                    "P1": -40,
+                    "P2": -60
+                }
+            },
+            "max_witness": {
+                "batch_group_shifts": {
+                    "GA": 20,
+                    "GB": 15
+                },
+                "part_residuals": {
+                    "P1": 40,
+                    "P2": 60
+                }
+            }
+        },
+        {
+            "gap_id": "GAP2",
+            "allowed_low": -8100,
+            "allowed_high": -7900,
+            "nominal_center": -8000,
+            "min_value": -8060,
+            "max_value": -7940,
+            "min_witness": {
+                "batch_group_shifts": {
+                    "GA": 20,
+                    "GB": 0
+                },
+                "part_residuals": {
+                    "P1": 40,
+                    "P2": 0
+                }
+            },
+            "max_witness": {
+                "batch_group_shifts": {
+                    "GA": -20,
+                    "GB": 0
+                },
+                "part_residuals": {
+                    "P1": -40,
+                    "P2": 0
+                }
+            }
+        }
+    ]
+}

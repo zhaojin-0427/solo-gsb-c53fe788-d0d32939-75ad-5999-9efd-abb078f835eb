@@ -1,0 +1,47 @@
+{
+  "batch_groups": [
+    {"id": "GA", "shift_limit": 20},
+    {"id": "GB", "shift_limit": 15}
+  ],
+  "parts": [
+    {
+      "id": "P1",
+      "nominal_size": 10000,
+      "batch_group_id": "GA",
+      "options": [
+        {"id": "cheap", "cost": 50, "residual_limit": 40},
+        {"id": "fine",  "cost": 120, "residual_limit": 10}
+      ]
+    },
+    {
+      "id": "P2",
+      "nominal_size": 5000,
+      "batch_group_id": "GB",
+      "options": [
+        {"id": "std",  "cost": 30, "residual_limit": 60},
+        {"id": "prec", "cost": 80, "residual_limit": 15}
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "id": "GAP1",
+      "constant": -12000,
+      "coefficients": [
+        {"part_id": "P1", "value": 1},
+        {"part_id": "P2", "value": 1}
+      ],
+      "allowed_low": 2850,
+      "allowed_high": 3150
+    },
+    {
+      "id": "GAP2",
+      "constant": 2000,
+      "coefficients": [
+        {"part_id": "P1", "value": -1}
+      ],
+      "allowed_low": -8100,
+      "allowed_high": -7900
+    }
+  ]
+}
